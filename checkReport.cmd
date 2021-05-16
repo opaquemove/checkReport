@@ -1,6 +1,6 @@
 @echo off
 if "%1" == "" goto HELP_MSG
-  powershell -ExecutionPolicy RemoteSigned ./checkReportHelper.ps1 %1
+  powershell -NoLogo -NoExit -ExecutionPolicy RemoteSigned -File ./checkReportHelper.ps1 %1
   exit
 
 :HELP_MSG
